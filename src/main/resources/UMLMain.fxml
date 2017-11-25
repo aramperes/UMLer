@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.momoperes.umler.ui.UMLMainController">
+
+    <center>
+        <VBox fx:id="mainBox">
+            <Label>
+                <VBox.margin>
+                    <Insets top="10.0" left="10.0"/>
+                </VBox.margin>
+                Welcome to UMLer
+                <font>
+                    <Font name="Arial" size="20.0"/>
+                </font>
+            </Label>
+
+            <Label>
+                <VBox.margin>
+                    <Insets top="5.0" left="10.0"/>
+                </VBox.margin>
+                Drag a Java source file in the area below to generate a UML.
+                <font>
+                    <Font name="Arial" size="14.0"/>
+                </font>
+            </Label>
+
+            <StackPane style="-fx-background-color: rgb(220, 220, 220)" VBox.vgrow="ALWAYS" fx:id="dropPane">
+                <VBox.margin>
+                    <Insets top="10.0" bottom="10.0"/>
+                </VBox.margin>
+                <VBox alignment="CENTER" spacing="10">
+                    <Label style="-fx-text-fill: rgb(150, 150, 150)">
+                        <font>
+                            <Font name="Arial" size="18.0"/>
+                        </font>
+                        Drop your .java file here
+                    </Label>
+
+                    <Label style="-fx-text-fill: rgb(150, 150, 150)">
+                        <font>
+                            <Font name="Arial" size="14.0"/>
+                        </font>
+                        (or just click around here to show the 'Open' window)
+                    </Label>
+                </VBox>
+
+            </StackPane>
+        </VBox>
+    </center>
+
+
+</BorderPane>
